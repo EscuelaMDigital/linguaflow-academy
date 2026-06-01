@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | LinguaFlow Academy</title>
+  <meta name="description"
+    content="Ponte en contacto con nosotros. Horarios de atención, dirección y formulario de soporte.">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+
+  <div id="scroll-progress"></div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="logo">
+        <div class="logo__icon">L</div>
+        <div class="logo__text">Lingua<span>Flow</span></div>
+      </a>
+
+      <nav class="nav">
+        <a href="../index.html" class="nav__link">Inicio</a>
+        <a href="academia.html" class="nav__link">La Academia</a>
+        <a href="contacto.html" class="nav__link active">Contacto</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <a href="../index.html" class="nav__link">Inicio</a>
+    <a href="academia.html" class="nav__link">La Academia</a>
+    <a href="contacto.html" class="nav__link active">Contacto</a>
+  </nav>
+
+  <main>
+    <section class="page-hero" style="padding-bottom: var(--space-2xl);">
+      <div class="container text-center animate-fade-up">
+        <span class="badge badge--accent mb-md">Atención al Alumno</span>
+        <h1 class="display-font mb-md">¿En qué podemos <span class="gradient-text">ayudarte?</span></h1>
+        <p class="mx-auto" style="margin-inline: auto;">Ponte en contacto con nuestro equipo de coordinación académica o
+          soporte técnico. Responderemos lo antes posible.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid-2 align-start">
+
+          <!-- Información de contacto -->
+          <div class="contact-info-card animate-fade-up animate-delay-1">
+            <h3 class="display-font">Información de Contacto</h3>
+            <p class="text-muted">Si tienes una urgencia relacionada con tus clases, te recomendamos llamarnos
+              directamente por teléfono.</p>
+
+            <div class="flex-col gap-lg mt-md">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📍</div>
+                <div>
+                  <h4>Dirección Sede Central</h4>
+                  <p>Avenida del Conocimiento, 45, Edificio B, Planta 3<br>28045 Madrid, España</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📞</div>
+                <div>
+                  <h4>Teléfono Gratuito</h4>
+                  <p><a href="tel:+34900123456">+34 900 123 456</a><br><span class="text-faint">(Soporte y
+                      coordinación)</span></p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">✉️</div>
+                <div>
+                  <h4>Correos Electrónicos</h4>
+                  <p><a href="mailto:info@linguaflow.com">info@linguaflow.com</a> (Info general)<br>
+                    <a href="mailto:soporte@linguaflow.com">soporte@linguaflow.com</a> (Técnico)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr style="border:0; border-top:1px solid var(--color-border); margin: var(--space-xl) 0;">
+
+            <h4 class="mb-sm">Horario de Atención (CET)</h4>
+            <table class="schedule-table">
+              <tbody>
+                <tr>
+                  <td>Lunes a Jueves</td>
+                  <td>09:00 - 21:00</td>
+                </tr>
+                <tr>
+                  <td>Viernes</td>
+                  <td>09:00 - 19:00</td>
+                </tr>
+                <tr>
+                  <td>Sábados</td>
+                  <td>10:00 - 14:00</td>
+                </tr>
+                <tr>
+                  <td>Domingos y Festivos</td>
+                  <td>Cerrado</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Formulario -->
+          <div class="card animate-fade-up animate-delay-2">
+            <h3 class="display-font mb-md">Envíanos un mensaje</h3>
+            <p class="text-muted mb-xl">Rellena el formulario y nuestro equipo te contactará en menos de 24 horas
+              laborables.</p>
+
+            <form id="contact-form" class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" id="name" class="form-input" placeholder="Ej. Ana García" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" class="form-input" placeholder="ana@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Teléfono (Opcional)</label>
+                <input type="tel" id="phone" class="form-input" placeholder="+34 600 000 000">
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Motivo de la consulta</label>
+                <select id="subject" class="form-select" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="prueba">Solicitar Prueba de Nivel</option>
+                  <option value="info">Información sobre Cursos</option>
+                  <option value="soporte">Soporte Técnico (Campus Virtual)</option>
+                  <option value="pagos">Dudas sobre Pagos/Facturación</option>
+                  <option value="otros">Otros</option>
+                </select>
+              </div>
+              <div class="form-group form-grid--full">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" class="form-textarea"
+                  placeholder="Escribe aquí tu consulta con el mayor detalle posible..." required></textarea>
+              </div>
+              <div class="form-group form-grid--full">
+                <label class="flex gap-sm align-center text-muted" style="font-size: 0.85rem; cursor: pointer;">
+                  <input type="checkbox" required style="accent-color: var(--color-primary);">
+                  Acepto la Política de Privacidad y el tratamiento de mis datos.
+                </label>
+              </div>
+              <div class="form-group form-grid--full form-submit-wrap">
+                <button type="submit" class="btn btn--primary" style="width: 100%;">Enviar mensaje</button>
+                <div id="form-success" class="form-success">¡Gracias! Hemos recibido tu mensaje. Nos pondremos en
+                  contacto contigo pronto.</div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo">
+            <div class="logo__icon">L</div>
+            <div class="logo__text">Lingua<span>Flow</span></div>
+          </a>
+          <p>Revolucionando la forma en la que aprendes idiomas. Inmersión, tecnología y excelencia académica en un solo
+            lugar.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="academia.html">La Academia</a></li>
+            <li><a href="academia.html#pricing">Planes y Precios</a></li>
+            <li><a href="../index.html#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Idiomas</h4>
+          <ul>
+            <li><a href="academia.html">Cursos de Inglés</a></li>
+            <li><a href="academia.html">Cursos de Francés</a></li>
+            <li><a href="academia.html">Cursos de Alemán</a></li>
+            <li><a href="academia.html">Cursos de Japonés</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:info@linguaflow.com">info@linguaflow.com</a></li>
+            <li><a href="tel:+34900123456">+34 900 123 456</a></li>
+            <li><a href="contacto.html">Atención al cliente</a></li>
+            <li><a href="contacto.html">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>&copy; 2024 LinguaFlow Academy. Todos los derechos reservados. (Proyecto Ficticio)</div>
+        <div class="flex gap-md">
+          <a href="#">Términos legales</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
